@@ -1,29 +1,29 @@
 
-//const name = ["Guadalupe", "Ollie", "Aki"]
-//const eventName = ["surprise"]
-function writeCards(namesArray, eventName) {
+const names = ["John", "Jeff", "Jerry"];
 
-    let thankYouCards = [];
+const eventName = "Birthday"
 
-    for (let i = 0; i < namesArray.length; i++) { 
-         
-       thankYouCards.push(`Thank you, ${namesArray[i]}, for the wonderful ${eventName} gift!`);
+
+function writeCards(names, eventName) {
+    
+    let newNames = [];
+    
+    for (let i = 0; i < names.length; i ++) {
         
+        newNames.push(`Thank you, ${names[i]}, for the wonderful ${eventName} gift!`);}
+
+        return newNames; 
+   
+   
     }
 
-    return thankYouCards;
-}
-
- 
-function countDown(callCount) {
-
-
-while (callCount > 0) { 
     
-    console.log(callCount) 
-    callCount --
-}
+    
+    function countDown() { 
+        let x = 10;
+        while (x >= 0) {
+            console.log(x --);
+        }
 
-console.log (callCount)
 
-}
+    }
